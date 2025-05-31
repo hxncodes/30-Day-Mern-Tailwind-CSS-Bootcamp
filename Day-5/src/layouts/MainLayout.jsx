@@ -11,7 +11,7 @@ function MainLayout() {
       <Outlet />
     </div>
     <footer className="text-center p-4 bg-gray-200">
-      <p>&copy; {new Date().getFullYear()} My Website</p>
+      <p>&copy; {new Date().getFullYear()} hxnCodes</p>
     </footer>
     </>
   )

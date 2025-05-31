@@ -12,32 +12,28 @@ import UserDetail from "./components/UserDetail";
 
 function App() {
   return (
-    <>
-      <Routes>
-        {/* Routes with Navbar */}
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          
-          {/* Nested routes for Dashboard */}
-          <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="profile" element={<Profile />} />
-            <Route path="settings" element={<Settings />} />
-          </Route>
-
-          {/* Dynamic Route for User detail page */}
-          <Route path="/user/:id" element={<UserDetail/>} />
+    <Routes>
+      {/* Routes with Navbar */}
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/user/:id" element={<UserDetail />} />
+        
+        {/* Nested Dashboard Routes */}
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="profile" element={<Profile />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
+      </Route>
 
-        {/* Login and Register routes */}
-        <Route path="/login" element={<div>Login Page</div>} />
-        <Route path="/register" element={<div>Register Page</div>} />
+      {/* No Navbar */}
+      <Route path="/login" element={<div>Login Page</div>} />
+      <Route path="/register" element={<div>Register Page</div>} />
 
-        {/* Catch-all route for 404 */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
+      {/* 404 Fallback */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
