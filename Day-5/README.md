@@ -25,7 +25,34 @@
 
 ---
 
-## 🧩 1. `index.css` – Tailwind v4.1 Theming Setup
+## 🧩 1. Tailwind installation into vite project
+-- Install tailwindcss and @tailwindcss/vite via npm.
+```shell
+  npm install tailwindcss @tailwindcss/vite
+```
+
+-- Add the @tailwindcss/vite plugin to your Vite configuration file, vite.config.js
+```js
+  import { defineConfig } from 'vite'
+  import react from '@vitejs/plugin-react'
+  import tailwindcss from '@tailwindcss/vite'
+
+  // https://vite.dev/config/
+  export default defineConfig({
+    plugins: [
+      react(),
+      tailwindcss(), // Add Tailwind plugin here
+    ],
+  })
+```
+
+-- Add an @import to your CSS file (src/index.css) that imports Tailwind CSS.
+```css
+  @import "tailwindcss";
+```
+
+
+## 🧩 2. `index.css` – Tailwind v4.1 Theming Setup
 
 ```css
 @import "tailwindcss";
