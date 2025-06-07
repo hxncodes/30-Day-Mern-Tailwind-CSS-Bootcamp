@@ -1,0 +1,24 @@
+{
+  "name": "day-11",
+  "version": "1.0.0",
+  "description": "Here's your complete **Day-11.md** file, continuing from Day 10 and incorporating analysis from your use of the Chalk library for professional logging.",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
