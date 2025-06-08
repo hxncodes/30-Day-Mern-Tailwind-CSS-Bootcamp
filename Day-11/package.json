@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Here's your complete **Day-11.md** file, continuing from Day 10 and incorporating analysis from your use of the Chalk library for professional logging.",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
