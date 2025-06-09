@@ -207,3 +207,5 @@ JWT_SECRET=your_jwt_secret_key
 * Used `jsonwebtoken` to sign and verify tokens
 * Protected API routes with middleware
 * Modular, clean structure
+
+
