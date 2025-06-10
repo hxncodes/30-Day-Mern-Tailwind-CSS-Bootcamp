@@ -11,11 +11,11 @@ const router = express.Router();
 
 
 router.route('/')
-  .get(getGoals)
-  .post(createGoal);
+  .get(protect, getGoals)
+  .post(protect, createGoal);
 router.route('/:id')
-  .put(updateGoal)
-  .delete(deleteGoal);
+  .put(protect, updateGoal)
+  .delete(protect, deleteGoal);
 
 
 
